@@ -8,7 +8,7 @@ This is a point and click game created with the Java game development framework 
 
 
 ## Gameplay
-The game is a Pacman-like game where the player controls a character that moves around a grid-like environment, collecting resources.
+The game is a Point and click game where the player controls a character that moves around a grid environment.
 
 ## Controls
 Click a tile to move the character around the environment.
@@ -23,7 +23,15 @@ No Enemies planned yet.
 The scoring system has yet to be implemented.
 
 # Development
-This game was developed using the Java game development framework LibGDX. The game features the tween game engine, including a TileGrid for managing the game environment, a camera system for managing the game view.
+This game is being developed using the Java game development framework LibGDX.
+I will work on this whenever I have some new ideas or when I learn some new Structure/Design Pattern or other.
+
+## Ideas to be implemented
+* Collecting of resources
+* NPC's
+* A town
+* Different structures / obstacles
+* New Pathing (Maybe A* implementation)
 
 # Credits
 This game was developed by [Cazpar].
