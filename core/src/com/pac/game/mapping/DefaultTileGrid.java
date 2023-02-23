@@ -20,6 +20,18 @@ public class DefaultTileGrid implements TileGrid {
         }
     }
 
+    @Override
+    public Tile getRandomUnoccupiedTile() {
+        while (true) {
+            int randomRow = (int) (Math.random() * NUM_ROWS);
+            int randomCol = (int) (Math.random() * NUM_COLS);
+            Tile tile = this.getTile(randomRow, randomCol);
+            if (!tile.isOccupied()) {
+                return tile;
+            }
+        }
+    }
+
     public int getNumCols() {
         return NUM_COLS;
     }

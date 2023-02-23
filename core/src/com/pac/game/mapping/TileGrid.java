@@ -16,4 +16,6 @@ public interface TileGrid {
     int[] getClosestUnoccupiedTile(int row, int col);
 
     Tile getTile(int row, int col);
+
+    Tile getRandomUnoccupiedTile();
 }

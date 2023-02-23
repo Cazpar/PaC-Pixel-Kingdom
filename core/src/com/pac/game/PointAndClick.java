@@ -32,7 +32,7 @@ public class PointAndClick extends ApplicationAdapter {
         shapeRenderer = new ShapeRenderer();
         tileGrid = TileGridFactory.create();
         player = Player.getInstance(tileGrid);
-        tree = new Tree(tileGrid, new Vector2(30, 30));
+        tree = new Tree(tileGrid);
 
         // Set up the camera and viewport
         camera = new OrthographicCamera();

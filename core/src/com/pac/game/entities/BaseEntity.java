@@ -1,16 +1,14 @@
 package com.pac.game.entities;
 
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Vector2;
-import com.pac.game.mapping.TileGrid;
+import com.pac.game.mapping.Tile;
 
 public abstract class BaseEntity {
 
     // Position of entity
-    Vector2 position = new Vector2();
+    Tile tile;
 
-    public BaseEntity(TileGrid tileGrid, Vector2 position) {
-
+    public BaseEntity(Tile tile) {
+        this.tile = tile;
     }
 
     /**
@@ -29,6 +27,7 @@ public abstract class BaseEntity {
      */
     public abstract void dispose();
 
-
-
+    public Tile getTile() {
+        return tile;
+    }
 }
